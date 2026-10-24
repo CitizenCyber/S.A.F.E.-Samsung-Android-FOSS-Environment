@@ -9,9 +9,9 @@ By seamlessly integrating Tracker Control with this setup, we effectively neutra
 
 ## Packages that will be debloated when you run the script -->
 
-android.autoinstalls.config.samsung
+android.autoinstalls.config.samsung -> pre-installed system component on Samsung Android devices that facilitates the automatic installation of recommended or required apps during the initial device setup or after a factory reset. It functions as part of Google's Play Auto Install (PAI) service, where it reads a configuration file to pass a list of specific application package names to the system's package manager. This process allows manufacturers or carriers to suggest or enforce the installation of apps without permanently baking them into the device's core software.
 
-com.android.apps.tag
+com.android.apps.tag -> developed by Google and part of the Android Open Source Project (AOSP), this package handles one very specific job: interpreting NFC (Near Field Communication) tags. NFC is the short-range wireless tech that lets your phone do things like tap-to-pay, connect to smart devices, or scan a hotel card. It’s the same invisible tech that powers Android Beam (now deprecated), tap-to-pair accessories, and contactless transit.
 
 com.android.avatarpicker
 
