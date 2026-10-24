@@ -9,13 +9,13 @@ By seamlessly integrating Tracker Control with this setup, we effectively neutra
 
 ## Packages that will be debloated when you run the script -->
 
-- **android.autoinstalls.config.samsung ->** pre-installed system component on Samsung Android devices that facilitates the automatic installation of recommended or required apps during the initial device setup or after a factory reset. It functions as part of Google's Play Auto Install (PAI) service, where it reads a configuration file to pass a list of specific application package names to the system's package manager. This process allows manufacturers or carriers to suggest or enforce the installation of apps without permanently baking them into the device's core software.
+- **android.autoinstalls.config.samsung ->** pre-installed system component on Samsung Android devices that facilitates the automatic installation of recommended or required apps during the initial device setup or after a factory reset. It functions as part of *Google's Play Auto Install (PAI) service*, where it reads a configuration file to pass a list of specific application package names to the system's package manager. This process allows manufacturers or carriers to suggest or enforce the installation of apps without permanently baking them into the device's core software.
 
-- **com.android.apps.tag ->** developed by Google and part of the Android Open Source Project (AOSP), this package handles one very specific job: interpreting NFC (Near Field Communication) tags. NFC is the short-range wireless tech that lets your phone do things like tap-to-pay, connect to smart devices, or scan a hotel card. It’s the same invisible tech that powers Android Beam (now deprecated), tap-to-pair accessories, and contactless transit.
+- **com.android.apps.tag ->** developed by Google and part of the *Android Open Source Project (AOSP)*, this package handles one very specific job: interpreting `NFC (Near Field Communication)` tags. NFC is the short-range wireless tech that lets your phone do things like tap-to-pay, connect to smart devices, or scan a hotel card. It’s the same invisible tech that powers Android Beam (now deprecated), tap-to-pair accessories, and contactless transit.
 
-- **com.android.avatarpicker ->** The com.android.avatarpicker package is the system app responsible for Android’s profile picture selection interface, allowing users to choose or change their avatar for device user profiles. **Google Account Sync (Android 15+):** On newer devices, it integrates with the Google Pixel Avatar App to allow users to sync their Android profile picture with their Google Account photo, ensuring consistency across the status bar and user switcher. Removing it may disrupt profile picture functionality.
+- **com.android.avatarpicker ->** The *com.android.avatarpicker* package is the system app responsible for Android’s profile picture selection interface, allowing users to choose or change their avatar for device user profiles. **Google Account Sync (Android 15+):** On newer devices, it integrates with the Google Pixel Avatar App to allow users to sync their Android profile picture with their Google Account photo, ensuring consistency across the status bar and user switcher. Removing it may disrupt profile picture functionality.
 
-- **com.android.backupconfirm ->** com.android.backupconfirm is a core Android system component that displays a confirmation dialog when a full backup or restore operation is initiated. It serves as a security measure to prevent silent data extraction by requiring explicit user authorization.
+- **com.android.backupconfirm ->** *com.android.backupconfirm* is a core Android system component that displays a confirmation dialog when a full backup or restore operation is initiated. It serves as a security measure to prevent silent data extraction by requiring explicit user authorization.
 
 **Key functions include:**
 
@@ -25,7 +25,7 @@ By seamlessly integrating Tracker Control with this setup, we effectively neutra
  
 **Trigger Events:** It is launched by system services when using ADB backup/restore, flashing custom recoveries, or performing factory data resets.
 
-com.android.bips
+- **com.android.bips ->** *com.android.bips* is the system package for Android's `BuiltInPrintService`, which provides the Default Print Service functionality on Android devices. It enables users to discover and print to nearby printers via Wi-Fi, Wi-Fi Direct (P2P), and network protocols like `IPP` and `IPPS` without requiring third-party apps. The service handles printer discovery, certificate verification for secure connections, and manages print job queues. It is considered a standard system app and is often listed as safe-to-remove bloatware on devices like Samsung phones if printing features are not needed.
 
 com.android.bluetoothmidiservice
 
