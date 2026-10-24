@@ -9,13 +9,21 @@ By seamlessly integrating Tracker Control with this setup, we effectively neutra
 
 ## Packages that will be debloated when you run the script -->
 
-android.autoinstalls.config.samsung -> pre-installed system component on Samsung Android devices that facilitates the automatic installation of recommended or required apps during the initial device setup or after a factory reset. It functions as part of Google's Play Auto Install (PAI) service, where it reads a configuration file to pass a list of specific application package names to the system's package manager. This process allows manufacturers or carriers to suggest or enforce the installation of apps without permanently baking them into the device's core software.
+- **android.autoinstalls.config.samsung ->** pre-installed system component on Samsung Android devices that facilitates the automatic installation of recommended or required apps during the initial device setup or after a factory reset. It functions as part of Google's Play Auto Install (PAI) service, where it reads a configuration file to pass a list of specific application package names to the system's package manager. This process allows manufacturers or carriers to suggest or enforce the installation of apps without permanently baking them into the device's core software.
 
-com.android.apps.tag -> developed by Google and part of the Android Open Source Project (AOSP), this package handles one very specific job: interpreting NFC (Near Field Communication) tags. NFC is the short-range wireless tech that lets your phone do things like tap-to-pay, connect to smart devices, or scan a hotel card. It’s the same invisible tech that powers Android Beam (now deprecated), tap-to-pair accessories, and contactless transit.
+- **com.android.apps.tag ->** developed by Google and part of the Android Open Source Project (AOSP), this package handles one very specific job: interpreting NFC (Near Field Communication) tags. NFC is the short-range wireless tech that lets your phone do things like tap-to-pay, connect to smart devices, or scan a hotel card. It’s the same invisible tech that powers Android Beam (now deprecated), tap-to-pair accessories, and contactless transit.
 
-com.android.avatarpicker
+- **com.android.avatarpicker ->** The com.android.avatarpicker package is the system app responsible for Android’s profile picture selection interface, allowing users to choose or change their avatar for device user profiles. **Google Account Sync (Android 15+):** On newer devices, it integrates with the Google Pixel Avatar App to allow users to sync their Android profile picture with their Google Account photo, ensuring consistency across the status bar and user switcher. Removing it may disrupt profile picture functionality.
 
-com.android.backupconfirm
+- **com.android.backupconfirm ->** com.android.backupconfirm is a core Android system component that displays a confirmation dialog when a full backup or restore operation is initiated. It serves as a security measure to prevent silent data extraction by requiring explicit user authorization.
+
+**Key functions include:**
+
+**User Confirmation:** It pauses the process to ask the user to confirm if the requested full backup or restore is legitimate.
+ 
+**Timeout Mechanism:** If the user does not respond within a designated interval (typically 30 seconds) or explicitly denies the request, no data is transferred.
+ 
+**Trigger Events:** It is launched by system services when using ADB backup/restore, flashing custom recoveries, or performing factory data resets.
 
 com.android.bips
 
