@@ -1,11 +1,13 @@
 # S.A.F.E. Project - Samsung Android FOSS Environment
 Shed the bloat. Shield your data. Switch to FOSS. (Work in progress)
 
-Instructions to build a S.A.F.E., the Samsung Android FOSS Environment. Samsung devices offer some of the best mobile hardware available today, but their stock software/UI comes loaded with proprietary bloatware, invasive telemetry, and hidden trackers. S.A.F.E. is designed to give you the best of both worlds: premium hardware paired with a clean, privacy-respecting software experience.
+### Instructions to build a S.A.F.E., the Samsung Android FOSS Environment ->
+
+Samsung devices offer some of the best mobile hardware available today, but their stock software/UI comes loaded with proprietary bloatware, invasive telemetry, and hidden trackers. S.A.F.E. is designed to give you the best of both worlds: premium hardware paired with a clean, privacy-respecting software experience.
 
 This project provides a comprehensive debloat script and a step-by-step setup guide to transform your stock OneUI device. Without the hassle of unlocking bootloaders or flashing custom ROMs, S.A.F.E. safely strips away OEM spyware and replaces closed-source applications with trusted, free, and open-source software alternatives.
 
-By seamlessly integrating Tracker Control with this setup, we effectively neutralize background tracking and silent data harvesting. Reclaim your digital privacy, extend your daily battery life, and take true ownership of your Samsung device. Get ready to use a smarter, safer, and fully untracked mobile phone.
+By seamlessly integrating *Tracker Control* with this setup and deleting/debloating Google's applications and services, we effectively neutralize background tracking and silent data harvesting. Reclaim your digital privacy, extend your daily battery life, and take true ownership of your Samsung device. Get ready to use a smarter, safer, and fully untracked mobile phone.
 
 ## Packages that will be debloated when you run the script -->
 
@@ -27,11 +29,19 @@ By seamlessly integrating Tracker Control with this setup, we effectively neutra
 
 - **com.android.bips ->** *com.android.bips* is the system package for Android's `BuiltInPrintService`, which provides the Default Print Service functionality on Android devices. It enables users to discover and print to nearby printers via Wi-Fi, Wi-Fi Direct (P2P), and network protocols like `IPP` and `IPPS` without requiring third-party apps. The service handles printer discovery, certificate verification for secure connections, and manages print job queues. It is considered a standard system app and is often listed as safe-to-remove bloatware on devices like Samsung phones if printing features are not needed.
 
-com.android.bluetoothmidiservice
+- **com.android.bluetoothmidiservice ->** The *com.android.bluetoothmidiservice* package provides the Bluetooth MIDI Service, a system-level Android service that enables Musical Instrument Digital Interface (MIDI) communication over Bluetooth and Bluetooth Low Energy (BLE). It allows Android devices to connect to external MIDI peripherals, such as keyboards or controllers, by managing the pairing and data transmission via the `MidiManager` API. Applications can use this service to open Bluetooth MIDI devices for reading and writing MIDI data, facilitating wireless connectivity for music production or control applications.
 
-com.android.bookmarkprovider
+- **com.android.bookmarkprovider ->** The *com.android.bookmarkprovider* package is a system-level content provider on Android devices that centrally manages and stores web bookmarks. Its primary function is to allow multiple browser applications to access, modify, and share saved bookmark data through a standardized interface, preventing the loss of favorites when specific browsers are uninstalled. On many devices, this system component also facilitates the injection of pre-installed partner bookmarks via the related `com.android.providers.partnerbookmarks` service. This allows device manufacturers and mobile carriers to preload curated links for support pages, promotional services, or ecosystem apps directly into the user’s browser experience.
 
-com.android.calllogbackup
+- **com.android.calllogbackup ->** The *com.android.calllogbackup* package is a built-in Android system component responsible for securely backing up and restoring your phone's call history. It operates in the background as part of the Android operating system (specifically within the `CallLogProvider` module) and performs the following functions:
+
+**Cloud Syncing:** It syncs your incoming, outgoing, and missed call logs to your Google account (via Google Drive).
+
+**Device Restoration:** When you upgrade to a new Android phone or factory reset your current one, this package is what pulls your saved call history from the cloud and restores it to your phone app.
+
+**Differential Backups:** To save data and battery, the package compares your current call log with the last backup, identifying and uploading only the new calls while removing records of calls you've deleted.
+
+**Note:** Because it is a core system function, you don't need to interact with it directly. It runs automatically when you have **Backup to Google Drive** enabled in your Android device settings.
 
 com.android.cameraextensions
 
