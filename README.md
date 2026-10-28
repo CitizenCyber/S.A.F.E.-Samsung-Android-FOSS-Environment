@@ -43,7 +43,7 @@ By seamlessly integrating *Tracker Control* with this setup and deleting/debloat
 
 **Note:** Because it is a core system function, you don't need to interact with it directly. It runs automatically when you have **Backup to Google Drive** enabled in your Android device settings.
 
-com.android.cameraextensions
+- **com.android.cameraextensions ->** The ⁠*com.android.cameraextensions⁠* package is a core Android system component that allows third-party apps to use your phone's advanced camera features. Historically, only your phone's built-in camera app could use specialized features like Night mode or Portrait mode. If you took a photo directly inside an app like Instagram or WhatsApp, the quality was often lower because the app could only access a basic camera feed. This package acts as a bridge between your phone's hardware and third-party apps, granting them access to manufacturer-specific capabilities.
 
 com.android.chrome
 
