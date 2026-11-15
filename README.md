@@ -65,11 +65,11 @@ By seamlessly integrating *Tracker Control* with this setup and deleting/debloat
 
 - **com.android.printspooler ->** `com.android.printspooler` is the core system service on Android devices responsible for managing and processing print jobs. It acts as an intermediary between applications and printers, handling data buffering, job queuing, and format conversion to ensure documents are sent to the correct printer in the proper order.
 
-com.android.providers.partnerbookmarks
+- **com.android.providers.partnerbookmarks ->** `com.android.providers.partnerbookmarks` is a system-level content provider in the Android operating system responsible for managing pre-installed browser bookmarks supplied by device manufacturers or mobile carriers. It enables partner bookmark injection, allowing these entities to preload specific website links into the user’s default browser to promote services, provide support resources, or integrate branded applications without requiring manual user input. While it helps create a curated out-of-box experience, this system component is often associated with bloatware because it introduces unwanted or redundant shortcuts that consume minimal system resources and clutter the user interface.
 
-com.android.proxyhandler
+- **com.android.proxyhandler ->** `com.android.proxyhandler` is a factory-installed Android system service responsible for managing proxy configurations and handling network traffic routing for other applications. It works in conjunction with `PacProcessor` to intercept network connections and forward them to the appropriate proxy server based on Proxy Auto-Config (PAC) files or manual proxy settings.
 
-com.android.sharedstoragebackup
+- **com.android.sharedstoragebackup ->** It handles the backup and restoration of shared storage content, ensuring that media and documents are preserved during system backups.
 
 com.android.traceur
 
