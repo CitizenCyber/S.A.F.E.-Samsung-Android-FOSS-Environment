@@ -59,11 +59,11 @@ By seamlessly integrating *Tracker Control* with this setup and deleting/debloat
 
 - **com.android.hotwordenrollment.xgoogle ->** `com.android.hotwordenrollment.xgoogle` is a system application on Android devices responsible for voice training and hotword detection for the Google Assistant. Its primary function is to manage the enrollment process where a user records their voice to create a unique voiceprint, allowing the device to distinguish the user's command from ambient noise or other speakers. Once enrolled, the app operates as a low-power background service that **continuously monitors audio input** for trigger phrases like *OK Google* or *Hey Google*. When the hotword is detected, it verifies the voice profile and activates the Google Assistant to execute hands-free commands, such as searching the web, making calls, or controlling smart home devices.
 
-com.android.nfc
+- **com.android.nfc ->** The `com.android.nfc` package serves as the foundational system component for Near Field Communication (NFC) on Android devices, managing the hardware interface and core communication protocols. It contains the *NfcAdapter class*, *NdefMessage class*, *NdefRecord class*, *Tag class*, *NfcManager class*. By utilizing these classes, Android devices can operate in Reader/Writer mode to interact with passive tags, Card Emulation mode to mimic payment cards or transit passes, and Peer-to-Peer (P2P) mode to exchange data with other NFC-enabled devices. 
 
-com.android.ons
+- **com.android.ons ->** `com.android.ons` is the package name for the Opportunistic Network Service (OppNet) on Android devices. It functions as a background system component that scans for available networks and matches them with opportunistic subscriptions to provide data in areas with corresponding networks.
 
-com.android.printspooler
+- **com.android.printspooler ->** `com.android.printspooler` is the core system service on Android devices responsible for managing and processing print jobs. It acts as an intermediary between applications and printers, handling data buffering, job queuing, and format conversion to ensure documents are sent to the correct printer in the proper order.
 
 com.android.providers.partnerbookmarks
 
