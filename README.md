@@ -71,11 +71,11 @@ By seamlessly integrating *Tracker Control* with this setup and deleting/debloat
 
 - **com.android.sharedstoragebackup ->** It handles the backup and restoration of shared storage content, ensuring that media and documents are preserved during system backups.
 
-com.android.traceur
+- **com.android.traceur ->** `com.android.traceur` is a pre-installed Android system app that provides System Tracing capabilities, serving as a graphical frontend for the Perfetto framework to record device activity. Its primary function is to help developers profile, debug, and optimize app performance by logging detailed metrics on CPU usage, memory allocation, and system events into trace files. While the app is safe and legitimate, it is often targeted by users seeking to reduce battery drain or background resource usage, as continuous tracing can impact device efficiency. Most users can safely disable the app via Developer Options or ADB commands without affecting general phone operation, though doing so removes tools necessary for deep system diagnostics.
 
-com.android.wallpaper.livepicker
+- **com.android.wallpaper.livepicker ->** `com.android.wallpaper.livepicker` is the system package for the Live Wallpaper Picker application on Android devices. Its primary function is to manage the selection and display of live wallpapers, allowing users to choose from stock live wallpapers, gallery images, and other installed live wallpaper services. The app acts as the interface for setting animated backgrounds on the home screen or lock screen. It is a standard, pre-installed component on most Android devices, developed by Google or device manufacturers like Samsung, Xiaomi, and OPPO, depending on the specific Android version and manufacturer skin (e.g., MIUI, One UI). While often small in size, it requires permissions to access media files to preview and apply wallpapers.
 
-com.android.wallpaperbackup
+- **com.android.wallpaperbackup ->** `com.android.wallpaperbackup` is a system process responsible for backing up and restoring wallpaper settings and associated metadata on Android devices. Some users have reported it as a potential battery drain.
 
 com.android.wallpapercropper
 
