@@ -77,11 +77,19 @@ By seamlessly integrating *Tracker Control* with this setup and deleting/debloat
 
 - **com.android.wallpaperbackup ->** `com.android.wallpaperbackup` is a system process responsible for backing up and restoring wallpaper settings and associated metadata on Android devices. Some users have reported it as a potential battery drain.
 
-com.android.wallpapercropper
+- **com.android.wallpapercropper ->** `com.android.wallpapercropper` is a system application on Android devices used to crop and resize images for setting as the phone's wallpaper. It handles the logic for adjusting image dimensions and aspect ratios to fit specific screen sizes, often incorporating parallax effects for dynamic wallpapers. The app is developed by various manufacturers, including *Google LLC*, *Samsung Electronics*, and *OnePlus Ltd.*, with versions tailored for different Android API levels (e.g., Android 10, 11, 16). It is considered safe to delete or debloat on rooted devices, as users can typically still set wallpapers using other system components like `com.samsung.android.app.dressroom` on Samsung devices.
 
-com.aura.oobe.samsung
+- **com.aura.oobe.samsung ->** `com.aura.oobe.samsung` (and its regional variant `com.aura.oobe.samsung.gl`) is a pre-installed system package known as *AppCloud*, which serves as an ad-based app discovery platform integrated into Samsung’s Out-of-Box Experience (OOBE). Developed by **IronSource** (now owned by **Unity**), it promotes and silently installs sponsored applications during device setup or via background updates, often without explicit user consent or clear notifications. While Samsung classifies it as a system component for device personalization, security researchers and users frequently identify it as bloatware or adware due to its intrusive behavior, including:
 
-com.diotek.sec.lookup.dictionary
+ **Silent Downloads:** It utilizes the **DOWNLOAD_WITHOUT_NOTIFICATION** permission to install apps without alerting the user.
+
+ **Privacy Concerns:** It collects sensitive data such as IP addresses, device fingerprints, and demographic information to serve targeted ads.
+
+ **Rebranding:** It may appear under carrier-specific names like **Vodafone AppBox** or **AppCloud**, masking its underlying package identity.
+
+ **System Conflicts:** It has been known to cause home screen errors and conflicts with the device launcher after software updates.
+
+- **com.diotek.sec.lookup.dictionary ->** `com.diotek.sec.lookup.dictionary` is the package name for Dictionary for Samsung, an application exclusive to Samsung devices that allows users to manage dictionaries and look up words directly from the keyboard. The app enables *Touch Dictionary* functionality, letting users define unfamiliar words while typing by highlighting text. It supports 75 languages and allows users to download specific language dictionaries and manually insert new words into the database to improve text recognition.
 
 com.facebook.appmanager
 
