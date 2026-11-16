@@ -1,7 +1,7 @@
 # S.A.F.E. Project - Samsung Android FOSS Environment
 Shed the bloat. Shield your data. Switch to FOSS. (Work in progress)
 
-### Instructions to build a S.A.F.E., the Samsung Android FOSS Environment ->
+## Instructions to build a S.A.F.E., the Samsung Android FOSS Environment ->
 
 Samsung devices offer some of the best mobile hardware available today, but their stock software/UI comes loaded with proprietary bloatware, invasive telemetry, and hidden trackers. S.A.F.E. is designed to give you the best of both worlds: premium hardware paired with a clean, privacy-respecting software experience.
 
@@ -9,7 +9,7 @@ This project provides a comprehensive debloat script and a step-by-step setup gu
 
 By seamlessly integrating *Tracker Control* with this setup and deleting/debloating Google's applications and services, we effectively neutralize background tracking and silent data harvesting. Reclaim your digital privacy, extend your daily battery life, and take true ownership of your Samsung device. Get ready to use a smarter, safer, and fully untracked mobile phone.
 
-## Packages that will be debloated when you run the script -->
+### Packages that will be debloated when you run the script -->
 
 - **android.autoinstalls.config.samsung ->** pre-installed system component on Samsung Android devices that facilitates the automatic installation of recommended or required apps during the initial device setup or after a factory reset. It functions as part of *Google's Play Auto Install (PAI) service*, where it reads a configuration file to pass a list of specific application package names to the system's package manager. This process allows manufacturers or carriers to suggest or enforce the installation of apps without permanently baking them into the device's core software.
 
