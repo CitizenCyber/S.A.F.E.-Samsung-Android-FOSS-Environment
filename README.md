@@ -91,11 +91,11 @@ By seamlessly integrating *Tracker Control* with this setup and deleting/debloat
 
 - **com.diotek.sec.lookup.dictionary ->** `com.diotek.sec.lookup.dictionary` is the package name for Dictionary for Samsung, an application exclusive to Samsung devices that allows users to manage dictionaries and look up words directly from the keyboard. The app enables *Touch Dictionary* functionality, letting users define unfamiliar words while typing by highlighting text. It supports 75 languages and allows users to download specific language dictionaries and manually insert new words into the database to improve text recognition.
 
-com.facebook.appmanager
+- **com.facebook.appmanager ->** `com.facebook.appmanager`, also known as *Meta App Manager*, is a background system service on Android devices designed to manage and update Meta applications such as Facebook, Instagram, Messenger, and WhatsApp. It acts as a helper component that ensures these apps remain compatible with the device’s operating system by handling automatic updates, library synchronization, and crash diagnostics without requiring a user-facing interface. Users can typically disable it via Android settings if they prefer to manage app updates manually or wish to reduce background activity, as the main Meta apps will continue to function, albeit potentially without the same level of automated maintenance.
 
-com.facebook.services
+- **com.facebook.services ->** `com.facebook.services` (also known as *Meta Services*) is a pre-installed background package that supports the Facebook app and other related applications like Messenger, Instagram, and WhatsApp. Its primary functions include managing network connections, synchronizing data, and delivering push notifications to ensure these apps run smoothly and reliably. While it consumes some battery and data, disabling it may cause glitches, slower loading times, or missed notifications for Facebook-related apps. However, if you do not use these services, many users find it safe to disable or remove to improve standby battery life.
 
-com.facebook.system
+- **com.facebook.system ->** `com.facebook.system`, known as Meta App Installer, is a background system service pre-installed on many Android devices by manufacturers like Samsung and Xiaomi. Its primary function is to handle the download and installation of Meta apps (such as Facebook, Messenger, and Instagram) and their updates, often operating outside the Google Play Store to ensure apps remain synchronized and up-to-date. It can typically be disabled via Android settings or uninstalled using ADB commands, though doing so may disable automatic updates for pre-installed Meta apps.
 
 com.google.android.adservices.api
 
