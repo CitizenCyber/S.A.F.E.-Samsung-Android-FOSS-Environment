@@ -103,11 +103,21 @@ By seamlessly integrating *Tracker Control* with this setup and deleting/debloat
 
 - **com.google.android.apps.maps ->** Google Maps application.
 
-com.google.android.apps.messaging
+- **com.google.android.apps.messaging ->** `com.google.android.apps.messaging` is the package name for *Google Messages*, Google's official messaging application for Android and Wear OS devices. The app serves as a unified platform that combines *SMS*, *MMS*, and *Rich Communication Services (RCS)* to facilitate modern texting conversations. Previously known as *Android Messages* or *Messenger*, the app has become the default messaging solution on many Android devices, replacing manufacturer-specific apps like Samsung Messages in various regions.
 
-com.google.android.apps.restore
+- **com.google.android.apps.restore ->** `com.google.android.apps.restore`, also known as Android Switch or Data Restore Tool, is an official Google application designed to securely copy data from one device to another.
 
-com.google.android.apps.setupwizard.searchselector
+- **com.google.android.apps.setupwizard.searchselector ->** `com.google.android.apps.setupwizard.searchselector` is a Google system app package that provides the Search Engine Selector interface on Android devices.  Its primary function is to allow users to choose a default search engine for the home screen search bar, a feature being rolled out in regions like the *European Economic Area (EEA)* to comply with the *Digital Markets Act (DMA)*.
+
+**Key details include ->**
+
+**Triggering the Screen:** Users typically see this selector during the initial device setup or when prompted by a notification; it can also be triggered manually via ADB commands (`adb shell pm enable com.google.android.apps.setupwizard.searchselector` followed by a reboot).
+
+**Functionality:** It lets users switch the search provider (e.g., from Google to Bing or DuckDuckGo), which updates the search bar icon on the home screen accordingly.
+
+**Configuration:** Users can later adjust their choice by navigating to *Pixel Launcher settings > Home screen search settings > Search engine*.
+
+**Package Identity:** It is often referred to by its package name `com.google.android.apps.setupwizard.searchselector` and is distinct from the core Setup Wizard (`com.google.android.setupwizard`) that handles general device provisioning.
 
 com.google.android.apps.tachyon
 
