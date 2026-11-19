@@ -119,11 +119,11 @@ By seamlessly integrating *Tracker Control* with this setup and deleting/debloat
 
 **Package Identity:** It is often referred to by its package name `com.google.android.apps.setupwizard.searchselector` and is distinct from the core Setup Wizard (`com.google.android.setupwizard`) that handles general device provisioning.
 
-com.google.android.apps.tachyon
+- **com.google.android.apps.tachyon ->** `com.google.android.apps.tachyon` is the internal package name for *Google Meet* (formerly *Google Duo*), the official video calling and conferencing app developed by Google LLC.
 
-com.google.android.apps.turbo
+- **com.google.android.apps.turbo ->** `com.google.android.apps.turbo`, known as *Device Health Services*, is a system application that predicts battery life based on your usage patterns and monitors device health. It provides personalized battery estimates and tracks application usage to improve battery management and charging estimates.
 
-com.google.android.appsearch.apk
+- **com.google.android.appsearch.apk ->** `com.google.android.appsearch.apk` is a system module that provides *AppSearch*, a high-performance, on-device search solution for managing locally stored, structured data. It enables custom in-app search capabilities by offering APIs for indexing data and retrieving it via full-text search, even when the device is offline. The module is distinct from the *Google Search* app; it is an internal framework used by developers to build search features within their own applications rather than a standalone search engine for users.
 
 com.google.android.as
 
