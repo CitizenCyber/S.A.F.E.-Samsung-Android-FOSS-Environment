@@ -143,11 +143,27 @@ By seamlessly integrating *Tracker Control* with this setup and deleting/debloat
 
 - **com.google.android.cellbroadcastreceiver ->** `com.google.android.cellbroadcastreceiver` is a pre-installed Android system app responsible for receiving, processing, and displaying *wireless emergency alerts* (WEA) and public safety messages broadcast by cellular carriers. It handles critical notifications such as AMBER alerts, presidential alerts, and severe weather warnings, ensuring they are presented to the user with the required sound and vibration based on regional regulations. The app operates by listening to cell broadcast channels on the network, using geofencing to verify if the device is within the affected area before displaying the alert. Disabling or removing it will prevent the device from receiving these notifications.
 
-com.google.android.cellbroadcastservice
+- **com.google.android.cellbroadcastservice ->** `com.google.android.cellbroadcastservice` is an Android system component responsible for receiving, decoding, and processing emergency alerts and public safety messages transmitted over cellular networks. It functions as the backend service that handles *CellBroadcast SMS* data, performing critical tasks such as geofencing to determine if a device is within a targeted alert area and managing message duplication checks.
 
-com.google.android.ext.shared
+**Key functions include:**
 
-com.google.android.federatedcompute
+**Alert Reception:** Listening to cellular broadcast channels for incoming messages like WEA (Wireless Emergency Alerts), AMBER alerts, and severe weather warnings.
+
+**Geographic Targeting:** Using device location data to ensure alerts are only displayed to users in affected areas, suppressing messages for devices outside the target zone.
+
+**Message Processing:** Decoding the SMS protocol, verifying authenticity, and forwarding the processed intent to the *CellBroadcastReceiver app* for display on the user's screen.
+
+**Offline Capability:** Operating independently of internet connectivity, ensuring alerts are received even when mobile data is unavailable or networks are congested during emergencies.
+
+- **com.google.android.ext.shared ->** `com.google.android.ext.shared`, also known as *Android Shared Library*, is a system component designed to allow Android applications to share common code and APIs without bundling duplicate libraries within each app. This mechanism reduces device storage usage and enables apps to access newer Android features on older operating systems by providing a single, centralized instance of shared resources.
+
+ **Key functions include:**
+
+ **Code Sharing:** It acts as a shared library that apps can access, similar to how the Android Support Library works, preventing redundant code from occupying internal storage.
+
+ **API Extension:** It supports extending managed APIs, allowing device implementations to preload updated *AOSP* (Android Open Source Project) implementations independently of the main OS update cycle.
+
+- **com.google.android.federatedcompute ->** The `com.google.android.federatedcompute` package is a core Android module that enables aggregate machine learning and analytics across multiple devices. It facilitates federated learning and federated analytics, allowing the device to train machine learning models using personal data.
 
 com.google.android.feedback
 
