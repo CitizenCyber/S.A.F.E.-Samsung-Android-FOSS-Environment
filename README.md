@@ -125,11 +125,23 @@ By seamlessly integrating *Tracker Control* with this setup and deleting/debloat
 
 - **com.google.android.appsearch.apk ->** `com.google.android.appsearch.apk` is a system module that provides *AppSearch*, a high-performance, on-device search solution for managing locally stored, structured data. It enables custom in-app search capabilities by offering APIs for indexing data and retrieving it via full-text search, even when the device is offline. The module is distinct from the *Google Search* app; it is an internal framework used by developers to build search features within their own applications rather than a standalone search engine for users.
 
-com.google.android.as
+- **com.google.android.as ->** `com.google.android.as` is the package name for *Android System Intelligence* (formerly known as *Device Personalization Services*), a built-in Google system app that runs on-device machine learning to power smart features.
 
-com.google.android.as.oss
+ **Key functions include:**
 
-com.google.android.cellbroadcastreceiver
+ **Live Caption:** Automatically generating captions for audio and video.
+
+ **Now Playing:** Identifying songs playing in the background.
+
+ **Smart Reply:** Suggesting quick responses to messages.
+
+ **Smart Text Selection:** Highlighting actionable text like addresses or phone numbers.
+
+ **App Predictions:** Anticipating which apps you are likely to open next.
+
+- **com.google.android.as.oss ->** `com.google.android.as.oss` is the package name for *Private Compute Services*, a core Android system service that enables on-device artificial intelligence features. It acts as a secure gateway for *Android System Intelligence* (also known as *AiAi*) to access network resources. The service facilitates features such as *Live Caption*, *Now Playing* (music recognition), and *Smart Reply* by updating machine learning models via secure, private paths using technologies like federated learning and private information retrieval. Because it handles sensitive on-device data, it is considered essential for these AI functionalities, and removing it may break or disable these features.
+
+- **com.google.android.cellbroadcastreceiver ->** `com.google.android.cellbroadcastreceiver` is a pre-installed Android system app responsible for receiving, processing, and displaying *wireless emergency alerts* (WEA) and public safety messages broadcast by cellular carriers. It handles critical notifications such as AMBER alerts, presidential alerts, and severe weather warnings, ensuring they are presented to the user with the required sound and vibration based on regional regulations. The app operates by listening to cell broadcast channels on the network, using geofencing to verify if the device is within the affected area before displaying the alert. Disabling or removing it will prevent the device from receiving these notifications.
 
 com.google.android.cellbroadcastservice
 
