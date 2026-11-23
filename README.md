@@ -181,11 +181,11 @@ By seamlessly integrating *Tracker Control* with this setup and deleting/debloat
 
 - **com.google.android.gms.location.history ->** The package `com.google.android.gms.location.history` is a component of *Google Play Services* that manages the storage and retrieval of a device's location history, enabling features like the *Google Maps Timeline*. It allows the system to save precise device locations to the device and Google servers, creating a personal map of places visited, routes taken, and trips made. This data is used to provide personalized experiences, such as traffic predictions, location-based recommendations, and activity insights within Google services.
 
-com.google.android.googlequicksearchbox
+- **com.google.android.googlequicksearchbox ->** `com.google.android.googlequicksearchbox` is the internal package name for the *Google Search* app on Android devices. It powers the home screen search bar, *Google Assistant* voice commands, the *Discover* feed, and voice search capabilities. This app runs persistently in the background to provide quick access to web searches, local device content (apps, contacts), and AI-powered features like AI Overviews and *Google Lens*. It also serves as a significant traffic source for websites, appearing in analytics as **Referral** traffic when users tap links within the app’s search bar or *Discover* feed.
 
-com.google.android.health.connect.backuprestore
+- **com.google.android.health.connect.backuprestore ->** The `com.google.android.health.connect.backuprestore` component is the module within *Android* that enables the backup and restore functionality for *Health Connect* data. It allows users to schedule automatic exports of their aggregated health and fitness data to a cloud storage provider (such as *Google Drive*) on a daily, weekly, or monthly basis. The data is exported as an encrypted *ZIP* file, which can later be imported to restore health data on a new device.
 
-com.google.android.healthconnect.controller
+- **com.google.android.healthconnect.controller ->** `com.google.android.healthconnect.controller` is the system package name for the *Health Connect* app, a centralized health data repository and API platform developed by *Google* and *Samsung* for Android devices. On *Android 14* and later, this controller is built directly into the operating system (replacing the standalone app previously available on Google Play for older versions).
 
 com.google.android.ondevicepersonalization.services
 
