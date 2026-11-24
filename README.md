@@ -187,11 +187,19 @@ By seamlessly integrating *Tracker Control* with this setup and deleting/debloat
 
 - **com.google.android.healthconnect.controller ->** `com.google.android.healthconnect.controller` is the system package name for the *Health Connect* app, a centralized health data repository and API platform developed by *Google* and *Samsung* for Android devices. On *Android 14* and later, this controller is built directly into the operating system (replacing the standalone app previously available on Google Play for older versions).
 
-com.google.android.ondevicepersonalization.services
+- **com.google.android.ondevicepersonalization.services ->** The package `com.google.android.ondevicepersonalization.services` is the underlying system component for *Device Personalization Services*, which was rebranded as *Android System Intelligence*. It powers machine learning features that provide smart predictions and personalized experiences while keeping user data private. It's functions are similar to `com.google.android.as` mentioned somewhere above.
 
-com.google.android.onetimeinitializer
+- **com.google.android.onetimeinitializer ->** `com.google.android.onetimeinitializer`, also known as *Google One Time Init*, is a background system component shipped as part of *Google Mobile Services (GMS)* on Google-certified Android devices. Its primary function is to perform one-off initialization tasks during the device's first-time setup or after a factory reset. The app runs in the background, has no launcher icon, and remains dormant after the initial configuration is complete.
 
-com.google.android.overlay.modules.cellbroadcastreceiver
+**Specifically, it handles:**
+
+*Guiding users through the initial setup wizard.*
+
+*Prompting users to select which Google apps to install.*
+
+*Setting up Google accounts, sync, backup, and payment options.*
+
+- **com.google.android.overlay.modules.cellbroadcastreceiver ->** `com.google.android.overlay.modules.cellbroadcastreceiver` is a system component responsible for receiving, processing, and displaying emergency alerts and public safety messages on Android devices. It handles critical notifications such as *AMBER* alerts, presidential alerts, and severe weather warnings broadcast by cellular carriers without requiring user subscription. The app operates by listening to cell broadcast channels and uses geofencing to ensure alerts are only displayed when the device is within the targeted geographic area. It is a pre-installed system app that runs in the background. Disabling/debloating/removing it will prevent the user from receiving these warnings.
 
 com.google.android.overlay.modules.cellbroadcastservice
 
