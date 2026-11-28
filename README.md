@@ -201,11 +201,21 @@ By seamlessly integrating *Tracker Control* with this setup and deleting/debloat
 
 - **com.google.android.overlay.modules.cellbroadcastreceiver ->** `com.google.android.overlay.modules.cellbroadcastreceiver` is a system component responsible for receiving, processing, and displaying emergency alerts and public safety messages on Android devices. It handles critical notifications such as *AMBER* alerts, presidential alerts, and severe weather warnings broadcast by cellular carriers without requiring user subscription. The app operates by listening to cell broadcast channels and uses geofencing to ensure alerts are only displayed when the device is within the targeted geographic area. It is a pre-installed system app that runs in the background. Disabling/debloating/removing it will prevent the user from receiving these warnings.
 
-com.google.android.overlay.modules.cellbroadcastservice
+- **com.google.android.overlay.modules.cellbroadcastservice ->** The `com.google.android.overlay.modules.cellbroadcastservice` is an Android system overlay (APEX module) that manages the delivery of *CellBroadcast* messages, primarily *Wireless Emergency Alerts* (WEA) and public safety notifications. It operates as a one-to-many geotargeted messaging service that decodes SMS broadcasts, performs device-based geofencing to verify if the user is in a defined alert area, and forwards relevant messages to the CellBroadcastReceiver app for display.
 
-com.google.android.partnersetup
+- **com.google.android.partnersetup ->** `com.google.android.partnersetup` (*Google Partner Setup*) is a pre-installed system-level app on Android devices that run Google Mobile Services. It is part of the system and cannot be fully removed without root access. It does not have a user interface and does not require direct interaction.
 
-com.google.android.printservice.recommendation
+**The app runs silently in the background to:**
+
+*Integrate Google services with the device manufacturer’s custom software (OEM skins).*
+
+*Sync preferences such as keyboard settings, voice input, and accessibility options during account sign-in or device setup.*
+
+*Ensure app compatibility by helping third-party applications work seamlessly with Google products like Gboard, Calendar, and Maps.*
+
+*Troubleshoot minor issues related to performance, battery, or connectivity that may arise after OS updates.*
+
+- **com.google.android.printservice.recommendation ->** The package `com.google.android.printservice.recommendation` is a system component of the *Android Print Service* app that recommends print services for users to install when compatible printers are detected on the network. It functions by scanning for nearby printers and using plugins to identify which print services (such as manufacturer-specific drivers or *Mopria*-compatible services) can manage those devices. The system then presents these recommendations to the user to facilitate easy printer connection without requiring manual configuration.
 
 com.google.android.projection.gearhead
 
