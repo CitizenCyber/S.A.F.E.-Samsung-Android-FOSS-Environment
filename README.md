@@ -217,11 +217,19 @@ By seamlessly integrating *Tracker Control* with this setup and deleting/debloat
 
 - **com.google.android.printservice.recommendation ->** The package `com.google.android.printservice.recommendation` is a system component of the *Android Print Service* app that recommends print services for users to install when compatible printers are detected on the network. It functions by scanning for nearby printers and using plugins to identify which print services (such as manufacturer-specific drivers or *Mopria*-compatible services) can manage those devices. The system then presents these recommendations to the user to facilitate easy printer connection without requiring manual configuration.
 
-com.google.android.projection.gearhead
+- **com.google.android.projection.gearhead ->** `com.google.android.projection.gearhead` is the Android package name for the *Android Auto* application developed by Google. It serves as the bridge that enables seamless integration between an Android smartphone and a vehicle’s infotainment system, projecting the phone's interface onto the car's display.
 
-com.google.android.syncadapters.calendar
+- **com.google.android.syncadapters.calendar ->** The package `com.google.android.syncadapters.calendar` (known as *Google Calendar Sync*) is a system component that synchronizes calendar events, reminders, and appointments between your Android device and your Google Calendar account. It operates as a sync adapter, running in the background to ensure that changes made on your phone are automatically updated on Google's servers and vice versa. This enables real-time, cross-device consistency, so any event created or modified on your Android device instantly appears on other devices linked to the same Google account, such as a tablet or computer.
 
-com.google.android.tts
+- **com.google.android.tts ->** `com.google.android.tts` is the package name for Google’s Speech Recognition & Synthesis app (formerly known as *Speech Services* by Google), which provides the underlying text-to-speech (TTS) and speech-to-text engine for Android devices. It powers system accessibility features and third-party applications to convert written text into spoken audio and vice versa. It **requires permissions for microphone and storage access** to function correctly.
+
+**Key functions include:**
+
+**Text-to-Speech:** Enabling apps like *Google Play Books* ("Read Aloud"), *Google Translate* (pronunciation), and *TalkBack* (screen reader) to read text aloud.
+
+**Speech-to-Text:** Allowing voice input for dictation in messaging apps, voice search, and real-time transcription in the *Recorder* app or *Phone* call screen.
+
+**Voice Navigation:** Providing spoken directions for *Google Maps* and other navigation tools.
 
 com.google.android.youtube
 
